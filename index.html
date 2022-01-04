@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<script type="text/javascript" src="bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<meta charset="utf-8">
+<title>Our nation our pride</title>
+<link rel="icon" href="comp.jpg" type="image/x-icon">
+<!-- google adsense-->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2181143312472042",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- google adsense-->
+
+</head>
+
+<body>
+<main class="container1">
+  <header>
+    <nav class="navbar-menu">
+      
+      <!-- Menu normal -->
+      <ul class="menu">
+  <li><a>Home</a> </li>
+  <li><a>Our nation</a></li>
+  <li><a>Categories</a>
+    <ul class="submenu three">
+      <li><a>Technology</a></li>
+      <li><a>Agriculture</a></li>
+      <li><a>Tourism</a></li>
+      <li><a>Education</a></li>
+      <li><a>Politics</a></li>
+      <li><a>Infrastracture</a></li>
+    </ul>
+  </li>
+  <li><a>News</a></li>
+  <li><a>Resources</a></li>
+  <li><a>About us</a>
+    <ul class="submenu five">
+      <li><a>About us</a></li>
+      <li><a>Contact us</a></li>
+    </ul>
+  </li>
+</ul>
+      
+      <!-- Mini Menu -->
+      <nav class="navbar-mini-menu">
+        <div class="menu-select">
+          <span class="menu-actual">
+            NjengaNchi
+          </span>
+          <span class="btn-select">
+            
+          </span>
+        </div>
+        <ul class="mini-menu-options">
+          <li><a>Home</a></li>
+          <li tabIndex="0"><a>Our nation</a></li>
+          <li tabIndex="0"><a>Categories</a>
+            <ul class="submenu five">
+              <li><a>Technology</a></li>
+              <li><a>Agriculture</a></li>
+              <li><a>Tourism</a></li>
+              <li><a>Education</a></li>
+              <li><a>Infrastracture</a></li>
+            </ul>
+          </li>
+          <li tabIndex="0"><a>News</a></li>
+          <li tabIndex="0"><a>Resources</a></li>
+          <li tabIndex="0"><a>About us</a>
+            <ul class="submenu five">
+              <li><a>About us</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </li>
+          
+        </ul> <!-- Fin lista mini menu -->
+      </nav> <!-- Fin mini menu -->
+      
+    </nav> <!-- Fin menu general (nav) -->
+  </header>
+  <h2>Our nation our pride</h2>
+  </main>
+  <!-- body content comes in here-->
+  
+<div class="container">
+<img src="elephant.jpg" width="100%" height="200px">
+<div class="row">
+  <div class="col-sm-4" id="part1"><h3><span>I love Kenya</span></h3>
+    <br><img src="images/kenya.png"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+<button class="button" type="btn-btn-info">Read more>></button></div>
+  <div class="col-sm-3" id="part1"><h3>I love Kenya</h3><br>
+    <img src="images/kenya.png" width="auto" height="100px"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation </div>
+  <div class="col-sm-4" id="part1"><h3>I love Kenya</h3><br>
+    <img src="images/kenya.png"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+
+<script src="jquery.js"></script>
+<script>
+$(document).on("ready",function() {
+  // 0 = hide, 1 = visible
+  var menuState = 0;
+  //if($(".mini-menu-options").is(":hidden")) {
+    /* Add a Click event listener to btn-select */
+    $(".btn-select").on("click",function() {
+      if(menuState === 0) {
+        $(".mini-menu-options").slideDown("slow");
+        menuState = 1;
+      } else {
+        $(".mini-menu-options").slideUp("slow");
+        menuState = 0;
+      }
+    });
+  //}
+  $(".mini-menu-options li").on("click", function() {
+    var numHijos = $(this).children().length;
+    if(numHijos < 2) {
+      // hide the menu
+      $(".mini-menu-options").hide("fast");
+
+      var texto = $(this).text();
+
+      $(".menu-select .menu-actual").text(texto);
+    }
+    menuState = 0;
+  });
+});
+</script>
+<!--<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>-->
+<div class="author"><h4>About the author<br></h4>
+  <img src="images/2.jpg" width="120px" height="200px" style="float: center;"><br>
+  <strong>Charles Martin</Strong> is the author of <strong>jengaNchi.co.ke</strong>.A very patriotic Kenyan who believes in change and works hard and has a strong faith in God in making Kenya a better place than he found it.
+  He loves reading books,swimming,playing music instruments and blogging.
+</div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-sm-3" id="divv">lorem</div>
+      <div class="col-sm-3">lorem</div>
+      <div class="col-sm-3">lorem</div>
+      <div class="col-sm-3">lorem</div>
+    </div>
+  </div>
+</body>
+</html>
